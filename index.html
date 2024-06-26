@@ -13,23 +13,6 @@
     
     <script>
       const ctx = document.getElementById('myChart');
-      
-      new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'top',
-            },
-            title: {
-              display: true,
-              text: 'Chart.js Combined Line/Bar Chart'
-            }
-          }
-        },
-      });
 
       const DATA_COUNT = 7;
       const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
@@ -55,6 +38,25 @@
           }
         ]
       };
+
+      
+      
+      new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: true,
+              text: 'Chart.js Combined Line/Bar Chart'
+            }
+          }
+        },
+      });
     </script>
   </body>
 </html>
